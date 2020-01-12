@@ -109,8 +109,9 @@ div.codebox {
     font-family: "Courier New", Courier, monospace;
     font-weight: normal;
     font-size: 24px;
-    background-color: #EEEEEE;
-    border: 1px solid #DDDDDD;
+    color:white;
+    background-color: rgb(49, 47, 47);
+    border: 1px solid rgb(81, 255, 0);
 }
 
 
