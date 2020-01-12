@@ -157,7 +157,7 @@ div.codebox, div.main code, div.main pre {
     font-weight: normal;
     font-size: 24px;
     background-color: #EEEEEE;
-    border: 1px solid #DDDDDD; 
+    border: 1px solid #DDDDDD;
 }
 
 div.main p.tagged-text
@@ -176,8 +176,9 @@ div.main pre {
 
 /* IMAGES */
 
-/*img {
+img {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-}*/
+    border: 1px
+}
 
