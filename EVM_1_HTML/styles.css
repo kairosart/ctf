@@ -23,6 +23,7 @@ body {
     font-family: "Open Sans", sans-serif !important;
     padding: 20x; 
     white-space: pre-wrap;
+    bgcolor="#E6E6FA";
 }
 
 div.main {
