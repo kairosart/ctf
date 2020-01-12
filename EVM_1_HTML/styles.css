@@ -48,6 +48,8 @@ div.page {
     padding-left: 380px; /* div.tree width + L/R margins + padding */
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    color: #ffffff;
 
 }
 
@@ -117,14 +119,14 @@ td {
 div.main h1 {
     font-weight: bold;
     display: inline;
-}
+    color: #ffffff;
 
 div.main h2 {
     padding-top: 1em;
     /*padding-bottom: 0.5em;*/
     font-weight: bold;
     font-size: 150%;
-    color: #666666;
+    color: #ffffff;
     display: inline;
 }
 
@@ -132,7 +134,7 @@ div.main h3 {
     padding-top: 0.75em;
     font-weight: bold;
     font-size: 125%;
-    color: #666666;
+    color: #ffffff;
     display: inline;
 }
 
