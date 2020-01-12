@@ -19,7 +19,7 @@ Colours:
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700);
 
 body {
-    font-size: 13px;
+    font-size: 18px;
     font-family: "Open Sans", sans-serif !important;
     padding: 20x; 
     white-space: pre-wrap;
@@ -153,7 +153,7 @@ span.code-node {
 div.codebox, div.main code, div.main pre {
     font-family: "Courier New", Courier, monospace;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 18px;
     background-color: #EEEEEE;
     border: 1px solid #DDDDDD;
 }
