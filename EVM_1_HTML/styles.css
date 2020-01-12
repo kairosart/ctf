@@ -155,9 +155,9 @@ span.code-node {
 div.codebox, div.main code, div.main pre {
     font-family: "Courier New", Courier, monospace;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 24px;
     background-color: #EEEEEE;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #DDDDDD; 
 }
 
 div.main p.tagged-text
