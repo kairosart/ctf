@@ -46,6 +46,8 @@ div.page {
     width: 100%;
     padding-left: 380px; /* div.tree width + L/R margins + padding */
     box-sizing: border-box;
+    background-color:  black
+
 }
 
 .clear {
