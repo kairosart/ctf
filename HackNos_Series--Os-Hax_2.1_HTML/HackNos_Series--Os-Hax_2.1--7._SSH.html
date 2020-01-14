@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>7. SSH</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><a name="h1-1"></a><strong><h2>7. SSH</h2></strong><br /><br />Log in ssh with user “flag” and password “topsecret”.<br /><br /><div class="codebox"><div class="codebox">$&nbsp;<span style="color:#ff9d00;font-weight:700">ssh</span>&nbsp;flag@192.168.12.29</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/81-1.png" alt="images/81-1.png" /><br /><br />Trying some commands like “cd” you'll realize thy are restricted. The reason is the shell type. To see what shell are this user in, type:<br /><br /><div class="codebox"><div class="codebox">$&nbsp;<span style="color:#ff9d00;font-weight:700">echo</span>&nbsp;<span style="color:#3ad900;font-weight:400">"$SHELL"</span></div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><span style="background-color:#000000;">/bin/rbash</span><br /><br />“-rbash” is The Restricted Shell is a Linux Shell that restrict some of the features of the bash shell.<br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>

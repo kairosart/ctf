@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>7.1 Looking for users</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><a name="h1-1"></a><strong><h2>7.1 Looking for users</h2></strong><br /><br />Let's see the home folder.<br /><br /><div class="codebox"><div class="codebox">$&nbsp;<span style="color:#ff9d00;font-weight:700">ls</span>&nbsp;home</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br />rohit<br /><br />So there's an user called “rohit”.<br /><br />There should be a file containing the hash for the rohit user password. Let's look for it.<br />After looking around different folders you'll find a “backups” folder in the “var”<br /><br /><div class="codebox"><div class="codebox">$&nbsp;<span style="color:#ff9d00;font-weight:700">grep</span>&nbsp;-iRl&nbsp;<span style="color:#3ad900;font-weight:400">"rohit"</span>&nbsp;<span style="color:#ff9d00;font-weight:700">/</span>var<span style="color:#ff9d00;font-weight:700">/</span>backups</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><span style="background-color:#000000;">/var/backups/passbkp/md5-hash</span><br /><br />That's our file.<br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>

