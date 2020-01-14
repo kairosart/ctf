@@ -16,78 +16,22 @@ Colours:
  * GENERAL
  ******************************************************************************/
 /*<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700' rel='stylesheet' type='text/css'>*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700);
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700);*/
 
 body {
-    font-size: 13px;
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
     font-family: "Open Sans", sans-serif !important;
     padding: 20x; 
     white-space: pre-wrap;
+    color: white;
+    font-size: 18px;
+    
 }
 
-div.main {
-    width: 100%;
-}
 
-div.tree {
-    width: 300px;
-    /*background-color: #EEEEEE;
-    border-top: 1px solid #DDDDDD;
-    border-bottom: 1px solid #DDDDDD;
-    margin-bottom: 20px;*/
-    padding: 0.75em 0 0.75em 20px;
-    float: left;
-    position: fixed;
-    height: 97%;
-    overflow: auto;
-}
 
-div.page {
-    width: 100%;
-    padding-left: 380px; /* div.tree width + L/R margins + padding */
-    box-sizing: border-box;
-}
 
-.clear {
-    clear: both
-}
-
-/*******************************************************************************
- * TREE INDEX
- ******************************************************************************/
-
-div.tree {
-    font-size: 12px;
-    color: #666666;
-}
-
-div.tree a, div.tree a:visited {
-    color: #666666;
-    text-decoration: none;
-}
-
-div.tree a:hover {
-    text-decoration: underline;
-}
-
-div.tree ol {
-    padding-left: 1em;
-    list-style-type: square;
-}
-
-div.tree ol ol {
-    list-style-type: circle;
-}
-
-div.tree ol ol ol {
-    list-style-type: disc;
-}
-
-div.tree ol ol ol ol, div.tree ol ol ol ol ol, div.tree ol ol ol ol ol ol {
-    list-style-type: disc;
-}
-
-div.tree a.show, div.tree a.hide { display: none; }
 
 /*******************************************************************************
  * NODE PAGES
@@ -111,38 +55,49 @@ td {
 
 /* HEADINGS */
 
-div.main h1 {
+h1 {
     font-weight: bold;
     display: inline;
+    color: #ffffff;
 }
-
-div.main h2 {
+h2 {
     padding-top: 1em;
     /*padding-bottom: 0.5em;*/
     font-weight: bold;
     font-size: 150%;
-    color: #666666;
+    color: #ffffff;
     display: inline;
 }
 
-div.main h3 {
+h3 {
     padding-top: 0.75em;
     font-weight: bold;
     font-size: 125%;
-    color: #666666;
+    color: #ffffff;
     display: inline;
 }
 
 /* LINKS */
 
-/*div.main a, div.main a:visited {
-    color: #005BCA;
-    text-decoration: none;
+ /* unvisited link */
+a:link {
+  color: red;
 }
 
-div.main a:hover, div#me a:hover {
-    text-decoration: underline;
-}*/
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(38, 255, 0);
+}
+
+/* selected link */
+a:active {
+  color: white;
+} 
 
 /* CODE */
 
@@ -150,32 +105,23 @@ span.code-node {
     /*color: #FFFF00;  /* yellow */
 }
 
-div.codebox, div.main code, div.main pre {
+div.codebox {
     font-family: "Courier New", Courier, monospace;
     font-weight: normal;
-    font-size: 13px;
-    background-color: #EEEEEE;
-    border: 1px solid #DDDDDD;
+    font-size: 24px;
+    color:white;
+    background-color: rgb(49, 47, 47);
+    border: 1px solid rgb(81, 255, 0); 
 }
 
-div.main p.tagged-text
-div.main code {
-    /*color: #859C00;*/
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-}
 
-div.main pre {
-    padding: 0.25em;
-    overflow: auto !important;
-    width: 75%;
-}
 
 
 /* IMAGES */
 
-/*img {
+img {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-}*/
+    border: 1px
+}
 
