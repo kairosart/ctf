@@ -19,13 +19,14 @@ Colours:
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700);*/
 
 body {
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
     font-size: 18px;
     font-family: "Open Sans", sans-serif !important;
     padding: 20x; 
     white-space: pre-wrap;
     color: white;
     font-size: 18px;
+    
 }
 
 
