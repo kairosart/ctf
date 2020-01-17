@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>6. Login via ssh</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><a name="h2-1"></a><strong><h2>6. Login via ssh</h2></strong><br /><br />We're going to use the credentials info we gathered using the etc/passwd and ldap.secret.<br /><br />User: vulnosadmin<br />Password: canuhackme<br /><br /><div class="codebox"><div class="codebox">$&nbsp;<span style="color:#ff9d00;font-weight:700">ssh</span>&nbsp;vulnosadmin@192.168.1.130</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/25-1.png" alt="images/25-1.png" /><br /><br />Type the sudo -l command to determine which commands were allowed using sudo.<br /><br /><div class="codebox"><div class="codebox">$&nbsp;<span style="color:#ff9d00;font-weight:700">sudo</span>&nbsp;-l</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/25-2.png" alt="images/25-2.png" /><br /><br />We observed that vulnosadmin has no restrictions set and has the privilege to run ALL commands with sudo.<br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>

