@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>2. Finding Services and Ports</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><h1><b><u>2. Finding Services and Ports</u></b></h1><br /><br /><div class="codebox"><div class="codebox">$&nbsp;nmap&nbsp;-sV&nbsp;-vv&nbsp;--script&nbsp;vuln&nbsp;192.168.12.43</div></div><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/201-1.png" alt="images/201-1.png" /><br /><br /><img src="images/201-2.png" alt="images/201-2.png" /><br />As a result we found:<br /><br />1. It's a Windows 7 Machine.<br />2. Ports under 1000 opened are: 135, 139, and 145.<br />3. The machine is vulnerable to  “Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)”.<br />4. CVE: CVE-2017-0143.<br /><br /><br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
