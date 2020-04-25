@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>2.1 db_nmap</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><h1><b><u>2.1 db_nmap</u></b></h1><br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">$msfconsole</span><br />msf5&nbsp;&gt;&nbsp;db_nmap&nbsp;-sV&nbsp;-vv&nbsp;--script&nbsp;vuln&nbsp;192.168.12.45</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/212-1.png" alt="images/212-1.png" /><br /><br /><img src="images/212-2.png" alt="images/212-2.png" /><br /><br />As a result we found:<br /><br />1. It's a Windows 7 Machine.<br />2. Ports under 1000 opened are: 135, 139, 445 and 5357.<br />3. The machine is vulnerable to  “Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)”.<br />4. CVE: CVE-2017-0143.<p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
