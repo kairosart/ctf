@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.1 Gobuster</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><h1><b><u>3.1 Gobuster</u></b></h1><br />Let’s run “gobuster” and see if we can find anything more.<br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">$gobuster</span>&nbsp;<span style="color:#ff9d00;font-weight:700">dir</span>&nbsp;-u&nbsp;192.168.12.59&nbsp;-w&nbsp;<span style="color:#ff9d00;font-weight:700">/</span>usr<span style="color:#ff9d00;font-weight:700">/</span>share<span style="color:#ff9d00;font-weight:700">/</span>wordlists<span style="color:#ff9d00;font-weight:700">/</span>dirbuster<span style="color:#ff9d00;font-weight:700">/</span>directory-list-2.3-medium.txt&nbsp;-x&nbsp;php</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/245-1.png" alt="images/245-1.png" /><br /><br />Most of these we’ve already seen just from navigating the site,  however, thankyou.php is new. You can also find it by completing the  contact form.<br />The thankyou.php page doesn’t look too interesting until you refresh it a few times. <br /><br /><br /><img src="images/245-2.png" alt="images/245-2.png" /><br /><br /><br /><img src="images/245-3.png" alt="images/245-3.png" /><br /><br />You can see the year change every time you refresh the page. It's a strange behavior.<br /><br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
