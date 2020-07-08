@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.1 Connect via SSH</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><h1><b><u>5.1 Connect via SSH</u></b></h1><br />a) We know port 22 is open for “ssh”. Try to connect with “ssh” using:<br /><br />Username: graham <br />Password: GSo7isUM1D4<br /><br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">$ssh</span>&nbsp;graham@192.168.12.68</div></div><br /><br />b) Check for sudo rights.<br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">$sudo</span>&nbsp;-l</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/329-1.png" alt="images/329-1.png" /><br /><br />As you see “jens” can execute the file “backups.sh” as “root”.<br /><br />c) Modify the file adding the following line and deleting the 2nd one.<br /><br />Add -&gt; "/bin/bash"<br />Delete -&gt; “tar -czf backups.tar.gz /var/www/html”<br /><br /><div class="codebox"><div class="codebox">graham@dc-6<span style="color:#ff9d00;font-weight:700">:/</span>home<span style="color:#ff9d00;font-weight:700">/</span>jens$&nbsp;nano&nbsp;backups.sh&nbsp;</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><span style="background-color:#000000;">!/bin/bash<br />/bin/bash</span><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
