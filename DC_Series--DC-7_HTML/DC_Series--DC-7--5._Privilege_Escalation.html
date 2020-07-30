@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5. Privilege Escalation</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><h1><b><u>5. Privilege Escalation</u></b></h1><br />IMPORTANT<br />If you're on Kali Linux 2020 you should change your user to “root” before running this part.<br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">$sudo</span>&nbsp;<span style="color:#ff9d00;font-weight:700">su</span></div></div><br /><br />So, at this point, we need to generate some <em>bash</em> code to execute yet another “reverse shell”. In this way we exploit the privileges of the backups.sh script in order to escalate to “root privileges”. Since the script’s owner is “root” that means when it is executed it will <strong><span style="text-decoration:underline;">be run as root</span></strong>.<br /><br /><br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
