@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>4.1 Port Knocking</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><h1><b><u>4.1 Port Knocking</u></b></h1><br />P<strong>ort knocking</strong> is a method of externally opening <a href="https://en.wikipedia.org/wiki/TCP_and_UDP_port">ports</a> on a <a href="https://en.wikipedia.org/wiki/Firewall_(networking)">firewall</a> by generating a connection attempt on a set of prespecified closed ports. <a href="https://en.wikipedia.org/wiki/Port_knocking">More info</a>.<br /><br />a) On your Kali Machine use the “netcat” command for the Port Knocking. <br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">$nc</span>&nbsp;-z&nbsp;192.168.12.73&nbsp;7469&nbsp;8475&nbsp;9842</div></div><br /><br />b) Run the “nmap” scan again to ensure that our knocking worked and SSH Port is opened.<br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">$nmap</span>&nbsp;-p22&nbsp;192.168.12.73<br /></div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/364-1.png" alt="images/364-1.png" /><br /><br />Now we can connet to the victime machine via “ssh”.<p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
