@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.3 Is it vulnerable for LFI and path traversal vulnerabilities?</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3.3 Is it vulnerable for LFI and path traversal vulnerabilities?</h1><br/><br />Let's see whether we are able to get the “/etc/password” or not.<br /><br />a) Browse to <a href="http://192.168.12.8/home.php?url=/etc/passwd">http://192.168.12.8/home.php?url=/etc/passwd</a>.<br /><br />    <img src="images/422-1.png" alt="images/422-1.png" /> <br /><br />    We can see that we were able to read the “/etc/passwd” file from the target machine.<br /><br />b) Let's access to “admin.php” accross “home.php”.<br /><br />    We'll do this using Burp Suite.<br />    <br />    1. Open Burp Suite and go to Proxy.<br />    2. Make sure the “Intercept button” is on.<br />    3. Go to <a href="http://192.168.12.8/home.php?url=admin.php.">http://192.168.12.8/home.php?url=admin.php.</a><br />    4. You'll see the following on Burp suite.<br />         <br />        <img src="images/422-2.png" alt="images/422-2.png" /><br /><br />    5. Click on “Action" button and choose "Send to Repeater'.<br />    6. Go to “Repeater” tab and click on “Send” button.<br />    <br />        <img src="images/422-3.png" alt="images/422-3.png" /><br /><br />        We can see that we finally got the LDAP credentials, which was hard-coded in the ‘admin.php’ file. It can be seen in the highlighted area of the above screenshot.<br />        <br />        Username: admin<br />        Passwword: "qMDdyZh3cT6eeAWD"    <br />        <p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

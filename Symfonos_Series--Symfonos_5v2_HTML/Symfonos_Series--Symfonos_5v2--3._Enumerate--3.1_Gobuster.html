@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.1 Gobuster</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3.1 Gobuster</h1><br/><br />Let’s run “gobuster” and see if we can find anything more.<br /><br /><div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$gobuster</span>&nbsp;<span style="color:#a52a2a;font-weight:700">dir</span>&nbsp;-u&nbsp;192.168.12.6&nbsp;-w&nbsp;<span style="color:#a52a2a;font-weight:700">/</span>usr<span style="color:#a52a2a;font-weight:700">/</span>share<span style="color:#a52a2a;font-weight:700">/</span>wordlists<span style="color:#a52a2a;font-weight:700">/</span>dirbuster<span style="color:#a52a2a;font-weight:700">/</span>directory-list-2.3-medium.txt&nbsp;-x&nbsp;php</div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><img src="images/420-1.png" alt="images/420-1.png" /><br /><br />We have four interesting files:<br />   1. home.php<br />   2. admin.php<br />   3. logout.php<br />   4. portraits.php<br /><br />Let's check these files one by one.<br /><br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
