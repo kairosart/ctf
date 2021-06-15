@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>6.2 Check for any file having SUID permissions</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>6.2 Check for any file having SUID permissions</h1><br/><br />1. Enumerate all binaries having SUID permissions.<br /><br />	<div class="codebox"><div class="codebox">www-data@ubuntu:/home/raj<span style="color:#0057ae;font-weight:400">$find</span>&nbsp;/&nbsp;-perm&nbsp;-u=s&nbsp;-type&nbsp;f&nbsp;2&gt;/dev/null<br /></div></div><br /><br /><br />	<span style="color:#ffa500;">Output:</span><span style="color:#000000;">/usr/sbin/pppd                                                                                                                                               <br />	</span><a href=""><img src="images/454-1.png" alt="images/454-1.png" /></a>/usr/bin/chfn                                                                                                                                                <br />Wget and cp command has the SUID permissions. This could be usefull for escalating root privilege.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
