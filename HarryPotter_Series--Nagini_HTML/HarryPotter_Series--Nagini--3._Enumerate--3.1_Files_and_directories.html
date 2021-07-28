@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>3.1 Files and directories</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>3.1 Files and directories</h1><br/><br />If you visit the 192.168.12.21 URL you got nothing interesting.<br /><br />1. Enumerate information about the directories.<br /><br />	<div class="codebox"><div class="codebox"><span style="color:#0057ae;font-weight:400">$gobuster</span>&nbsp;dir&nbsp;-u&nbsp;http://192.168.12.21&nbsp;-x&nbsp;html,txt,php,bak&nbsp;--wordlist=/usr/share/wordlists/dirb/common.txt</div></div><br /><br />	<span style="color:#ffa500;">Output:</span><br />	<a href=""><img src="images/483-1.png" alt="images/483-1.png" /></a><br /><br /><br />	We got a directory “/joomla” and a “note.txt” file.<br /><br />3. Open in your browser the “note.txt” file.<br /><br />	<a href=""><img src="images/483-2.png" alt="images/483-2.png" /></a><br /><br /><span style="indent:1;">It looks as if the server is using “</span><a href="https://en.wikipedia.org/wiki/HTTP/3">http3 protocol</a><span style="indent:1;">” which isn’t currently supported by the browser. Doing some research, I found out that we could build “cloudflare’s” quiche repo for the purpose.</span><br /><br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

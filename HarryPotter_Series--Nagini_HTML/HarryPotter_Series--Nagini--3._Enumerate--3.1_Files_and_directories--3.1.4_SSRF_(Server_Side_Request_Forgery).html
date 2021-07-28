@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>3.1.4 SSRF (Server Side Request Forgery)</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>3.1.4 SSRF (Server Side Request Forgery)</h1><br/><br />Server-side request forgery (also known as SSRF) is a web security vulnerability that allows an attacker to <strong>induce the server-side application to make HTTP requests to an arbitrary domain</strong> of the attacker&#39;s choosing. (From <a href="https://portswigger.net/web-security/ssrf">here</a>)<br /><br /><br /><strong>SSRF attacks against the server itself</strong><br />In an SSRF attack against the server itself, the attacker  induces the application to make an HTTP request back to the server that  is hosting the application, via its loopback network interface. This  will typically involve supplying a URL with a hostname like <code>127.0.0.1</code> (a reserved IP address that points to the loopback adapter) or <code>localhost</code> (a commonly used name for the same adapter).<br /><br />1. Go to the following URL on your Kali Machine.<br /><br />	<a href="http://192.168.12.21/internalResourceFeTcher.php?url=127.0.0.1">http://192.168.12.21/internalResourceFeTcher.php?url=127.0.0.1</a><br />	<br />	<a href=""><img src="images/489-1.png" alt="images/489-1.png" /></a>   <br />	<br />	 It loads you up to the main page.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
