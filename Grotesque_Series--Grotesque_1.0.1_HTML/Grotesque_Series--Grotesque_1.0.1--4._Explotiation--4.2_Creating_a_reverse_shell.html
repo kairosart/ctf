@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>4.2 Creating a reverse shell</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>4.2 Creating a reverse shell</h1><br/><br />1. Go to “Appearance &gt; Theme Editor &gt; index.php”.<br />    <a href=""><img src="images/550-1.png" alt="images/550-1.png" /></a><br />   <br />2. Delete the content of the page.<br />   <br />3. Copy from you Kali Machine “/usr/share/webshells/php/php-reverse-shell.php” file the content and paste it in the content field.<br />   <br />3. Change the attacker IP to “192.168.12.10”.<br />   <br />	<a href=""><img src="images/550-2.png" alt="images/550-2.png" /></a><br />	<br />3. Click on the “Update File” button.<br />	<a href=""><img src="images/550-3.png" alt="images/550-3.png" /></a><br />	<br />4. On you Kali Machine run the following code.<br /><br />    <div class="codebox"><div class="codebox"><span style="color:#0057ae;font-weight:400">$nc</span>&nbsp;-lvp&nbsp;1234&nbsp;</div></div><br /><br />5. Visit the <a href="http://192.168.12.24/lyricsblog/">http://192.168.12.24/lyricsblog/</a> page.<br />   <br />6. You got a “Reverse Shell” on your Kali Machine.<br />	<a href=""><img src="images/550-4.png" alt="images/550-4.png" /></a><br />	<br />	But your id is “uid=33(www-data) gid=33(www-data) groups=33(www-data)”<br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
