@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>3.1 Port fuzzing</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>3.1 Port fuzzing</h1><br/><br />You don&#39;t know whether there is any different port than the previous ones where there were another webpage or not. So, let&#39;s fuzz the ports.<br /><br />The following commands have to be run on your Kali Machine.<br /><br />1. Use “wget” to filter all ports. This command downloads “index” files on all ports and adds a suffix with their matching port.<br />	<div class="codebox"><div class="codebox">$for&nbsp;i&nbsp;in&nbsp;{23..600};&nbsp;do&nbsp;wget&nbsp;192.168.12.25:$i&nbsp;-O&nbsp;index$i;&nbsp;done</div></div><br /><br />2. List and order all the “index” files.<br />	<div class="codebox"><div class="codebox"><span style="color:#0057ae;font-weight:400">$ls</span>&nbsp;index*&nbsp;-la&nbsp;|&nbsp;sort</div></div><br /><br />	<span style="color:#ffa500;">Output:</span><br />	<a href=""><img src="images/561-1.png" alt="images/561-1.png" /></a><br />	<br />	The biggest “index” file is <code>index258</code>, so, this one has to be different.<br /><br />3. Go to your browser an visit the <a href="http://192.168.12.25:258/">http://192.168.12.25:258/</a> page.<br />	<a href=""><img src="images/561-2.png" alt="images/561-2.png" /></a><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
