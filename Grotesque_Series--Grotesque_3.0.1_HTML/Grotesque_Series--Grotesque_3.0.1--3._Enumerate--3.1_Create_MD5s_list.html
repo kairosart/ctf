@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>3.1 Create MD5s list</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>3.1 Create MD5s list</h1><br/><br />1. Create a MD5 wordlist.<br />	<div class="codebox"><div class="codebox"><span style="color:#0057ae;font-weight:400">$for</span>&nbsp;i&nbsp;in&nbsp;$(cat&nbsp;/usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt);&nbsp;do&nbsp;echo&nbsp;<span style="color:#0057ae;font-weight:400">$i</span>&nbsp;|&nbsp;md5sum&nbsp;&gt;&gt;&nbsp;g3.txt;&nbsp;done</div></div><br />	Have a coffee.	<br />	<br />	<span style="color:#ffa500;">Output:</span>		<br />	<a href=""><img src="images/574-1.png" alt="images/574-1.png" /></a><br />	<br />2. Remove all the spaces and minus characters on your text editor.	<br />	<br />	<span style="color:#ffa500;">Output:</span>	<br />	<a href=""><img src="images/574-2.png" alt="images/574-2.png" /></a>	<br /><br />3. Run “Dirbuster” on a shell and fill the fields as in the below picture.<br />	<a href=""><img src="images/574-3.png" alt="images/574-3.png" /></a><br />	<br />	<a href=""><img src="images/574-4.png" alt="images/574-4.png" /></a><br />	<br />	We got a page called “<a href="http://192.168.12.26/f66b22bf020334b04c7d0d3eb5010391.php">http://192.168.12.26/f66b22bf020334b04c7d0d3eb5010391.php</a>”<br /><br />4. If you visit the page you&#39;ll see an empty page.<br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
