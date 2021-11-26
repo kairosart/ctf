@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.2 Webserver with Gobuster</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3.2 Webserver with Gobuster</h1><br/><br />Discover the directory and files on the webserver.<br />1. On your Kali Machine run the following command.<br /><br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$gobuster</span>&nbsp;<span style="color:#a52a2a;font-weight:700">dir</span>&nbsp;-u&nbsp;http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.31&nbsp;-x&nbsp;txt,php,html&nbsp;--wordlist&nbsp;<span style="color:#a52a2a;font-weight:700">/</span>usr<span style="color:#a52a2a;font-weight:700">/</span>share<span style="color:#a52a2a;font-weight:700">/</span>wordlists<span style="color:#a52a2a;font-weight:700">/</span>dirbuster<span style="color:#a52a2a;font-weight:700">/</span>directory-list-2.3-medium.txt&nbsp;</div></div><br /><br />    <span style="color:#ffa500;">Output:</span><br />    <img src="images/637-1.png" alt="images/637-1.png" /><br /><br />    There's a similar file to 'search.php" called search1.php.<br /><br />2. Navigate to <a href="http://192.168.12.29/generator.php.">http://192.168.12.31/search1.php</a><br />    <img src="images/637-2.png" alt="images/637-2.png" /><br /><br />3. Show the Page Source.<br />    <img src="images/637-3.png" alt="images/637-3.png" /><br />   <br />    There are some parameter on the URLs.<p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
