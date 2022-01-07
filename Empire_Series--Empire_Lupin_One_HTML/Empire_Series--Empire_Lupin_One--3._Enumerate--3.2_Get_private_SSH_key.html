@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.2 Get private SSH key</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3.2 Get private SSH key</h1><br/><br />1. Navigate to http://192.168.12.36./~secret/.mysecret.txt.<br />    <img src="images/708-1.png" alt="images/708-1.png" /><br />   <br />    It's a “<a href="https://www.reference.cash/protocol/blockchain/encoding/base58check/">Base58</a>” encoded text. You can see there's any zero (0) in the text.<br />    Base58 alphabet:<br />    <code>123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz<br /></code><br />2. Go to this <a href="https://codebeautify.org/base58-decode">link</a> to decode the text.<br />    <img src="images/708-2.png" alt="images/708-2.png" /><br /><br />3. Copy the decode text and create a file called “sshkey” with the text.<br /><br />4. Change the “sshkey” file's permissions.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$chmod</span>&nbsp;600&nbsp;sshkey</div></div><br /><br /><br />   <br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
