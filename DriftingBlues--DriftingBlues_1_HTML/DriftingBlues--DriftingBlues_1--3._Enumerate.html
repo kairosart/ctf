@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3. Enumerate</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3. Enumerate</h1><br/><br />1. Visit <a href="http://192.168.12.41/.">http://192.168.12.41/.</a><br />    <img src="images/776-1.png" alt="images/776-1.png" /><br /><br />    Apparently, there isn't anything interesting here.<br /><br />2. View the page source.<br />   <img src="images/776-2.png" alt="images/776-2.png" /><br />   <br />   <img src="images/776-3.png" alt="images/776-3.png" /><br /><br />    <img src="images/776-4.png" alt="images/776-4.png" /><br /><br /><br />    You'll find:<br />   • A comment that can be interesting.<br />   • Two email accounts: sheryl@driftingblues.box, eric@driftingblues.box. <br /><br />    So the domain is “driftingblues.box" and there are two users: sheryl and eric.<br /><br />3. Decode the comment. It seems “base64”.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$echo</span>&nbsp;L25vdGVmb3JraW5nZmlzaC50eHQ=&nbsp;<span style="color:#a52a2a;font-weight:700">|</span>&nbsp;base64&nbsp;-d</div></div><br /><br />	<span style="color:#ffa500;">Output:</span><br />    <img src="images/776-5.png" alt="images/776-5.png" /><br /><br />4. Add the domain to your Kali Machine “/etc/hosts/ file the line ”192.168.12.41   driftingblues.box".<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$sudo</span>&nbsp;nano&nbsp;<span style="color:#a52a2a;font-weight:700">/</span>etc<span style="color:#a52a2a;font-weight:700">/</span>hosts</div></div><br /><br />    <br />    <p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
