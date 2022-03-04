@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.1 Scan the website with nikto</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3.1 Scan the website with nikto</h1><br/><br />1. Run the following code.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$nikto</span>&nbsp;-h&nbsp;http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.32</div></div><br /><br />	<span style="color:#ffa500;">Output:</span><br />    <img src="images/792-1.png" alt="images/792-1.png" /><br /><br />    It seems there's a Wordpress page.<br /><br />2. Visit <a href="http://192.168.12.42/blog/wp-login.php.">http://192.168.12.42/blog/wp-login.php.</a><br />    <img src="images/792-2.png" alt="images/792-2.png" /><br /><br />     You can see the links head to the <code>driftingblues.box</code> domain.<br /><br />3.  Add the domain to your Kali Machine “/etc/hosts/ file the line ”192.168.12.42   driftingblues.box".<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$sudo</span>&nbsp;nano&nbsp;<span style="color:#a52a2a;font-weight:700">/</span>etc<span style="color:#a52a2a;font-weight:700">/</span>hosts</div></div><br /><br />4. Visit <a href="http://driftingblues.box/blog/wp-login.php.\">http://driftingblues.box/blog/wp-login.php.\</a><br />    <img src="images/792-3.png" alt="images/792-3.png" /><br /> <p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

