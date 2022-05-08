@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.2 Pipe a base64 file</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3.2 Pipe a base64 file</h1><br/><br />    Pipe “cat” eon to base64 to know what is inside.<br /><br />1. Run on your Kali Machine.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$cat</span>&nbsp;eon&nbsp;<span style="color:#a52a2a;font-weight:700">|</span>&nbsp;base64&nbsp;-d<br /></div></div><br /><br />	<span style="color:#ffa500;">Output:</span><br />    <img src="images/869-1.png" alt="images/869-1.png" /><br /><br />    You can see that starts with “PK” and there's a file callded “creds.txt”.<br /><br /><br />    From <a href="https://www.netspi.com/blog/technical/web-application-penetration-testing/magic-bytes-identifying-common-file-formats-at-a-glance/">https://www.netspi.com/blog/technical/web-application-penetration-testing/magic-bytes-identifying-common-file-formats-at-a-glance/</a><br />    <img src="images/869-2.png" alt="images/869-2.png" /><br /><br />     So it's a zip file,<br /><br />2. Redirect the output of<em> </em>“cat eon | base64 -d" to “eon.zip”. This way you'll create a zip file.<br />    <div class="codebox"><div class="codebox"><span style="color:#6a5acd;font-weight:400">$cat</span>&nbsp;eon&nbsp;<span style="color:#a52a2a;font-weight:700">|</span>&nbsp;base64&nbsp;-d&nbsp;&gt;&nbsp;eon.zip</div></div><br /><br /><p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
