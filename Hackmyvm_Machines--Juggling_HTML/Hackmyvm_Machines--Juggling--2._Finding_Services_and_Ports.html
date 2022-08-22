@@ -1,0 +1,16 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>2. Finding Services and Ports</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  
+    <script type="text/javascript">
+        function in_frame () { try { return window.self !== window.top; } catch (e) { return true; } }
+        if (!in_frame()) {
+            var page = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+            window.location = 'index.html#' + page;
+        }
+    </script>
+</head>
+<body><div class="page"><h1 class="title">2. Finding Services and Ports</h1><br/><br />1. Run nmap to discover all open ports.<br /><br />    <div class="codebox"><div class="codebox">$&nbsp;<span style="color:#a52a2a;font-weight:700">sudo</span>&nbsp;nmap&nbsp;-sS&nbsp;-sV&nbsp;-v&nbsp;192.168.12.55&nbsp;-p-</div></div><br /><br />    <span style="color:#ffa500;">Output:</span><br />    <img src="images/948-1.png" alt="images/948-1.png" /><br /><br />    There are 2 ports opened: 80 and 22<br />    You can see a domain called “juggling.hmv”.<br /></div></body></html>
