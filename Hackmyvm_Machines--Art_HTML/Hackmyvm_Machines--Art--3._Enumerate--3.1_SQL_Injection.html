@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.1 SQL Injection</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3.1 SQL Injection</h1><br/><br />1. Browse to <a href="http://192.168.12.59/?tag=">http://192.168.12.59/?tag=</a> and you'll see the entire page with all the images.<br />   <br />2. Now we're going to break the query. Add a single quote (') at the end of the URL and browse it.  <a href="http://192.168.12.59/?tag=">http://192.168.12.59/?tag='</a>.<br />   You will not see any image anymore. The query on the database has been broken. <p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

