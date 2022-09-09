@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.1 FTP</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.1 FTP</h1><br/><p></p><p>1. Create a FTP anonymous connection with the victim&#39;s machine. Credentials <code>anonymous:anonymous</code>.</p><p>    <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">ftp</span> 192.168.12.62<br /></pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/977-1.png" alt="images/977-1.png" /></p><p>    </p><p>2. Go to the path  “/var/www/html/phpipam/app/subnets/import-subnet” and list the files.</p><p>    <div class="codebox"><pre><span style="color:#a52a2a;font-weight:700">ftp</span>&gt; <span style="color:#a52a2a;font-weight:700">cd</span> <span style="color:#a52a2a;font-weight:700">/</span>var<span style="color:#a52a2a;font-weight:700">/</span>www<span style="color:#a52a2a;font-weight:700">/</span>html<span style="color:#a52a2a;font-weight:700">/</span>phpipam<span style="color:#a52a2a;font-weight:700">/</span>app<span style="color:#a52a2a;font-weight:700">/</span>subnets<span style="color:#a52a2a;font-weight:700">/</span>import-subnet<br /><span style="color:#a52a2a;font-weight:700">ftp</span>&gt; <span style="color:#a52a2a;font-weight:700">ls</span><br /></pre></div></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/977-2.png" alt="images/977-2.png" /></p><p></p><p>    There&#39;s a directory called “upload&quot; where you can do wherever you want to.</p><p>    </p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>
