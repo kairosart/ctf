@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.4 Feroxbuster</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.4 Feroxbuster</h1><br/><p></p><p>   <strong>F</strong><strong><h3>eroxbuster</h3></strong><h3> is a tool designed to perform Forced Browsing. Forced browsing is an attack where the aim is to enumerate and access resources that are not referenced by the web application, but are still accessible by an attacker. feroxbuster uses brute force combined with a wordlist to search for unlinked content in target directories. These resources may store sensitive information about web applications and operational systems, such as source code, credentials, internal network addressing, etcâ€¦ This attack is also known as Predictable Resource Location, File Enumeration, Directory Enumeration, and Resource Enumeration.</h3></p><p>   </p><p>   </p><p>1. Use “feroxbuster” to enumerate more resources.</p><p>    <div class="codebox"><pre>$ feroxbuster -u http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.63<span style="color:#a52a2a;font-weight:700">/</span>t0d0_l1st_f0r_f1r5t -x txt,php,html,<span style="color:#a52a2a;font-weight:700">zip</span>,htm,bak,pem -o ferx.log</pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/994-1.png" alt="images/994-1.png" /></p><p>    </p><p>    There&#39;s an “upload.php” file you can use to upload an exploit. And there&#39;s an “uploads” directory where it seems the files are uploaded.</p><p>    </p></div>
+</body>
+</html>

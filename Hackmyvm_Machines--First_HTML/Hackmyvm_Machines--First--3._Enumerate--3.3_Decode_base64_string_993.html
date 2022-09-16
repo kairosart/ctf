@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.3 Decode base64 string</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.3 Decode base64 string</h1><br/><p></p><p>1. Decode the string from the previous step.</p><p>    <div class="codebox"><pre>$ base64 --decode first_Logo.jpg.out &gt; first_Logo.jpg.out.decoded.txt<br />$ <span style="color:#a52a2a;font-weight:700">cat</span> first_Logo.jpg.out.decoded.txt</pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/993-1.png" alt="images/993-1.png" /></p><p></p><p>    You have another message in Hexadecimal.</p><p></p><p>2. Convert hex to text.</p><p>    <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">echo</span> 2f 74 30 64 30 5f 6c 31 73 74 5f 66 30 72 5f 66 31 72 35 74 <span style="color:#a52a2a;font-weight:700">|</span> xxd -r -p<br /></pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/993-2.png" alt="images/993-2.png" /></p><p></p><p>4. Visit <a href="http://192.168.12.63/t0d0_l1st_f0r_f1r5t/">http://192.168.12.63/t0d0_l1st_f0r_f1r5t/</a>.</p><p>    <img src="images/993-3.png" alt="images/993-3.png" /></p><p></p><p>    There&#39;s a clue.</p><p></p><p>    todo for first:</p><p>    First: patch the buffer overflow in our secret file ;)</p><p>    2: remove the temporary upload php file</p><p>    3: put the server on the World Wide Web 4: profit</p></div>
+</body>
+</html>

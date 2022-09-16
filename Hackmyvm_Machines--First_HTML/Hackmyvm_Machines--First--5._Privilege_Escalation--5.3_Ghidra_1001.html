@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.3 Ghidra</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.3 Ghidra</h1><br/><p></p><p>1. Run “ghidra”, create a project and import the “secret” file to the project.</p><p>    </p><p>2. Look for the “Function”.</p><p>    <img src="images/1001-1.png" alt="images/1001-1.png" /></p><p>   </p><p>3. On the right panel analyze the code.</p><p>   </p><p>    • You have two buffers one for 114 and another one for 10.</p><p>    • You have a chart_16 and chart_88.</p><p>    • If the buffer is over 10 you can execute the next line <code>&quot;std::operator&lt;&lt;((basic_ostream *)__TMC_END__,&quot;correct, input command:&quot;);&quot;</code></p><p></p><p>4. Run the following code on your “Reverse Shell”.</p><p>    <div class="codebox"><pre>first@first<span style="color:#a52a2a;font-weight:700">:/</span>tmp$ <span style="color:#a52a2a;font-weight:700">sudo</span> -u root <span style="color:#a52a2a;font-weight:700">/</span>bin<span style="color:#a52a2a;font-weight:700">/</span>secret</pre></div></p><p>    You&#39;ll be asked for a pass. Introduce any string longer than 10.</p><p></p><p>	<span style="color:#ffa500;">Output:</span>  </p><p>    <img src="images/1001-2.png" alt="images/1001-2.png" /></p><p>    </p><p>5. Introduce the “id” command.</p><p>   </p><p>	<span style="color:#ffa500;">Output:</span>     </p><p>    <img src="images/1001-3.png" alt="images/1001-3.png" />    </p><p></p><p>    You can see you&#39;re “root”.</p><p>    </p><p>6. Introduce the “bash&quot; command.</p><p>    <div class="codebox"><pre>correct, input command<span style="color:#a52a2a;font-weight:700">:bash</span><br /></pre></div>    </p><p>	<span style="color:#ffa500;">Output:</span>     </p><p>    <img src="images/1001-4.png" alt="images/1001-4.png" /></p></div>
+</body>
+</html>

