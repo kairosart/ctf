@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.1 Gobuster</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.1 Gobuster</h1><br/><p></p><p>1. Enumerate files with “gobuster”.</p><p>    <div class="codebox"><pre>$ gobuster <span style="color:#a52a2a;font-weight:700">dir</span> -e -w <span style="color:#a52a2a;font-weight:700">/</span>usr<span style="color:#a52a2a;font-weight:700">/</span>share<span style="color:#a52a2a;font-weight:700">/</span>wordlists<span style="color:#a52a2a;font-weight:700">/</span>dirb<span style="color:#a52a2a;font-weight:700">/</span>big.txt -x php, jpg -t 40 -u http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.65 <span style="color:#a52a2a;font-weight:700">|</span> <span style="color:#a52a2a;font-weight:700">tee</span> gobuster_discover.log<br /><br /></pre></div></p><p></p><p>	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1025-1.png" alt="images/1025-1.png" /></p><p>    </p><p>    There&#39;s a “log.php” file.</p><p>    </p><p>3. Visit <a href="http://192.168.12.65/log.php">http://192.168.12.65/log.php</a>.</p><p>    <img src="images/1025-2.png" alt="images/1025-2.png" /></p><p>4. Visit <a href="http://192.168.12.65/rabbit.jpg">http://192.168.12.65/rabbit.jpg</a>.</p><p>    <img src="images/1025-3.png" alt="images/1025-3.png" />    </p><p></p><p>   </p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>

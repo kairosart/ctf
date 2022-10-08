@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.2 Steganography</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.2 Steganography</h1><br/><p></p><p><strong>Steganography</strong>  is the practice of concealing a message within another message or a physical object. In computing/electronic contexts, a computer file, message, image, or video is concealed within another file, message, image, or video.</p><p></p><p></p><p>1. On your Kali Machine download and follow the instructions to install the “stegseek” application from the github <a href="https://github.com/RickdeJager/stegseek.">https://github.com/RickdeJager/stegseek.</a></p><p>   <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">sudo</span> apt <span style="color:#a52a2a;font-weight:700">install</span> .<span style="color:#a52a2a;font-weight:700">/</span>stegseek_0.6-1.deb</pre></div></p><p></p><p>2. Download the “rabbit.jpg” file from the victim&#39;s machine.</p><p>    <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">wget</span> http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.65<span style="color:#a52a2a;font-weight:700">/</span>rabbit.jpg<br /></pre></div></p><p></p><p>3. Run the following code.</p><p>    <div class="codebox"><pre>$ stegseek rabbit.jpg</pre></div></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1026-1.png" alt="images/1026-1.png" /></p><p></p><p>    You&#39;ll get a file called “first_Logo.jpg.out”.</p><p></p><p>4. Show the contente of the “first_Logo.jpg.out” file.</p><p>    <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">cat</span> first_Logo.jpg.out</pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1026-2.png" alt="images/1026-2.png" /></p><p>    </p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>

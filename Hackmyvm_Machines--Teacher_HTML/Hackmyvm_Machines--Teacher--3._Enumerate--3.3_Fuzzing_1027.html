@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.3 Fuzzing</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.3 Fuzzing</h1><br/><p></p><p>1. As you can see in the “gobuster” section there&#39;s a file called  “access.php”. Try to fuzz.</p><p>    <div class="codebox"><pre>$ ffuf -w <span style="color:#a52a2a;font-weight:700">/</span>usr<span style="color:#a52a2a;font-weight:700">/</span>share<span style="color:#a52a2a;font-weight:700">/</span>seclists<span style="color:#a52a2a;font-weight:700">/</span>Discovery<span style="color:#a52a2a;font-weight:700">/</span>Web-Content<span style="color:#a52a2a;font-weight:700">/</span>raft-medium-words-lowercase.txt -u http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.65<span style="color:#a52a2a;font-weight:700">/</span>access.php?FUZZ=<span style="color:#a52a2a;font-weight:700">id</span>  </pre></div></p><p>    There are too many results.</p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1027-1.png" alt="images/1027-1.png" /></p><p></p><p>2. Filter HTTP response size.</p><p>    <div class="codebox"><pre>$ ffuf -w <span style="color:#a52a2a;font-weight:700">/</span>usr<span style="color:#a52a2a;font-weight:700">/</span>share<span style="color:#a52a2a;font-weight:700">/</span>seclists<span style="color:#a52a2a;font-weight:700">/</span>Discovery<span style="color:#a52a2a;font-weight:700">/</span>Web-Content<span style="color:#a52a2a;font-weight:700">/</span>raft-medium-words-lowercase.txt -u http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.65<span style="color:#a52a2a;font-weight:700">/</span>access.php?FUZZ=<span style="color:#a52a2a;font-weight:700">id</span> -fs 12 </pre></div></p><p>    <span style="color:#ffa500;">Output:</span>    </p><p>    <img src="images/1027-2.png" alt="images/1027-2.png" /></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>
