@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.1 LFI Test</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.1 LFI Test</h1><br/><p></p><p><strong>Local file inclusion</strong> (<strong>LFI</strong>)</p><p></p><p>A file inclusion vulnerability is a type of <a href="https://en.wikipedia.org/wiki/World_Wide_Web">web</a> <a href="https://en.wikipedia.org/wiki/Vulnerability_(computing)">vulnerability</a> that is most commonly found to affect <a href="https://en.wikipedia.org/wiki/Web_application">web applications</a> that rely on a scripting <a href="https://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase)">run time</a>. More info at <a href="https://en.wikipedia.org/wiki/File_inclusion_vulnerability">Wikipedia</a>.</p><p></p><p>1. Try the most common LFI vulnerability.</p><p></p><p></p><p>    • Try to look for the  “../../../../../../../etc/passwd” file. </p><p>    • Visit <a href="http://192.168.12.66/building/index.php?page=../../../../../../../etc/passwd">http://192.168.12.66/building/index.php?page=../../../../../../../etc/passwd</a> </p><p>    • See that it is accessible. This proves that we do  have the LFI Vulnerability.</p><p></p><p>    <img src="images/1038-1.png" alt="images/1038-1.png" /></p><p>    </p><p>    There two users: jack and jaba.</p><p></p><p></p><p></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>
