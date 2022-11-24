@@ -1,0 +1,127 @@
+/* Met Office external website                                                                            
+
+Colours:
+- black/dark grey: #202A2C
+- dark grey: #666666      
+- grey: #DDDDDD (thin lines)
+- light grey: #EEEEEE (background colour)
+- darkish green: #BCDB0C                 
+- green: #CCFF33                         
+- darkish blue: #4BA8BA                  
+- blue: #00ADD0                          
+
+*/
+
+/*******************************************************************************
+ * GENERAL
+ ******************************************************************************/
+/*<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700' rel='stylesheet' type='text/css'>*/
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700);*/
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif !important;
+    padding: 20x; 
+    white-space: pre-wrap;
+    color: white;
+    font-size: 18px;
+    
+}
+
+
+
+
+
+/*******************************************************************************
+ * NODE PAGES
+ ******************************************************************************/
+
+/* TABLES */
+
+table {
+    border: 1px solid #AAAAAA;
+}
+
+th {
+    background-color: #EEEEEE;
+}
+
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top: 1px solid #AAAAAA;
+}
+
+/* HEADINGS */
+
+h1 {
+    font-weight: bold;
+    display: inline;
+    color: #ffffff;
+}
+h2 {
+    padding-top: 1em;
+    /*padding-bottom: 0.5em;*/
+    font-weight: bold;
+    font-size: 150%;
+    color: #ffffff;
+    display: inline;
+}
+
+h3 {
+    padding-top: 0.75em;
+    font-weight: bold;
+    font-size: 125%;
+    color: #ffffff;
+    display: inline;
+}
+
+/* LINKS */
+
+ /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(38, 255, 0);
+}
+
+/* selected link */
+a:active {
+  color: white;
+} 
+
+/* CODE */
+
+span.code-node {
+    /*color: #FFFF00;  /* yellow */
+}
+
+div.codebox {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: normal;
+    font-size: 24px;
+    color:white;
+    background-color: rgb(49, 47, 47);
+    border: 1px solid rgb(81, 255, 0); 
+}
+
+
+
+
+/* IMAGES */
+
+img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px
+}
+

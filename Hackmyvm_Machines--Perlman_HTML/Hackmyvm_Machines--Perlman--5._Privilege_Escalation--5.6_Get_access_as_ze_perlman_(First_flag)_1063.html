@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.6 Get access as "ze_perlman" (First flag)</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.6 Get access as "ze_perlman" (First flag)</h1><br/><p></p><p>1. On the victim&#39;s machine run the following.</p><p>    <div class="codebox"><pre>milou@perlman:$ cd /dev/shm<br />milou@perlman:/dev/shm$ cp id_rsa ze_perlman<br />milou@perlman:/dev/shm$ chmod 600 ze_perlman <br />milou@perlman:$ ssh -i ze_perlman ze_perlman@localhost<br /><br /></pre></div></p><p></p><p>  	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1063-1.png" alt="images/1063-1.png" /></p><p>    </p><p>    Now you&#39;re “ze_perlman”.</p><p></p><p>2. Check out with can “ze_perlman” do.</p><p>    <div class="codebox"><pre>ze_perlman@perlman:~$ sudo -l</pre></div>  </p><p>  	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1063-2.png" alt="images/1063-2.png" />  </p><p>    </p><p>3. Run the following commands.</p><p>    <div class="codebox"><pre>ze_perlman@perlman:~$ ls<br />ze_perlman@perlman:~$ cat user.txt<br /></pre></div>    </p><p>  	<span style="color:#ffa500;">Output:</span>   </p><p>    <img src="images/1063-3.png" alt="images/1063-3.png" /></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>

