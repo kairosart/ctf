@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.3 Search files belonging to user's group</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.3 Search files belonging to user's group</h1><br/><p></p><p> User&#39;s group is 1000.</p><p> </p><p>1. Run the following command on the SSH connection.</p><p>    <div class="codebox"><pre>john@TheWall<span style="color:#a52a2a;font-weight:700">:</span>~$ <span style="color:#a52a2a;font-weight:700">find</span> <span style="color:#a52a2a;font-weight:700">/</span> -xdev -group 1000 2&gt;<span style="color:#a52a2a;font-weight:700">/</span>dev<span style="color:#a52a2a;font-weight:700">/</span>null</pre></div> </p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1090-1.png" alt="images/1090-1.png" /></p><p>    </p><p>    “<code>/usr/sbin/tar</code>” is the most interesting file.</p><p>    </p><p>2. Start scanning the file system for files with capabilities using <code>getcap -r /</code>   The -r flag tells getcap to search recursively, ‘/‘ to indicate that we want to search the whole system.</p><p><span style="indent:1;">The  output is usually filled with tens or hundreds of  “Operation not  supported” errors, making it hard to read. We can  redirect errors to  /dev/null to get a cleaner output. More info </span><a href="https://nxnjz.net/2018/08/an-interesting-privilege-escalation-vector-getcap/">here</a><span style="indent:1;">.</span></p><p>    </p><p>    On your SSH connection run the following command.</p><p>   <div class="codebox"><pre>john@TheWall<span style="color:#a52a2a;font-weight:700">:</span>~$ <span style="color:#a52a2a;font-weight:700">/</span>sbin<span style="color:#a52a2a;font-weight:700">/</span>getcap -r <span style="color:#a52a2a;font-weight:700">/</span> 2&gt;<span style="color:#a52a2a;font-weight:700">/</span>dev<span style="color:#a52a2a;font-weight:700">/</span>null</pre></div>  </p><p>   </p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1090-2.png" alt="images/1090-2.png" /></p><p></p><p>    It has the capability of reading files.</p><p>    </p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>
