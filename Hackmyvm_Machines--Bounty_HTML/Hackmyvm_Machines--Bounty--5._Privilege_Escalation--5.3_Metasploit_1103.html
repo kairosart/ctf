@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.3 Metasploit</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.3 Metasploit</h1><br/><p>Use “metasploit”.</p><p></p><p>1. If you don&#39;t have the exploit go to <a href="https://github.com/rapid7/metasploit-framework/blob/master//modules/exploits/multi/http/gitea_git_fetch_rce.rb">https://github.com/rapid7/metasploit-framework/blob/master//modules/exploits/multi/http/gitea_git_fetch_rce.rb</a>. </p><p>   </p><p>2. On the Kali Mahine copy the code and create a file called “gitea_git_fetch_rce.rb” with him.</p><p></p><p>3. Paste it on “/usr/share/metasploit-framework/modules/exploits/multi/http”</p><p></p><p>4. On your Kali Machine run “metasploit”.</p><p>    <div class="codebox"><pre>$ msfconsole</pre></div></p><p>    <span style="color:#ffa500;">Output:</span>   </p><p>    <img src="images/1103-1.png" alt="images/1103-1.png" /></p><p>   </p><p>5. Look for a “gitea” exploit.</p><p>    <img src="images/1103-2.png" alt="images/1103-2.png" /></p><p></p><p>6. Run the following on &quot;msfconsole&quot;.</p><p>    <div class="codebox"><pre>msf6 &gt; use 1<br /></pre></div> </p><p>   </p><p>7. Configure the options as follow. Don&#39;t forget the “target” to  “Unix Command”. </p><p>    <strong>Note:</strong> <em>RHOSTS should be 192.168.12.73.</em></p><p></p><p>    <img src="images/1103-3.png" alt="images/1103-3.png" /></p><p></p><p>8. Run the exploit.</p><p>    <div class="codebox"><pre>msf6 exploit(multi/http/gitea_git_fetch_rce) &gt; run</pre></div></p><p>   </p><p>    <img src="images/1103-4.png" alt="images/1103-4.png" /></p><p>   </p><p>9. Run the following commands.</p><p>    <div class="codebox"><pre>whoami<br />cd /home/primavera<br />ls<br />cat note.text</pre></div></p><p></p><p>    <img src="images/1103-5.png" alt="images/1103-5.png" /></p><p>    <img src="images/1103-6.png" alt="images/1103-6.png" /></p><p>    <img src="images/1103-7.png" alt="images/1103-7.png" /></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>
