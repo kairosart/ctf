@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>5.1 Getting private key</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>5.1 Getting private key</h1><br/><p></p><p>1. Run the shell you got the following commands to find the “id_rsa” file.</p><p>    <div class="codebox"><pre>brad@crazymed<span style="color:#a52a2a;font-weight:700">:</span>~$ <span style="color:#a52a2a;font-weight:700">ls</span> -al<br />brad@crazymed<span style="color:#a52a2a;font-weight:700">:</span>~$ <span style="color:#a52a2a;font-weight:700">cd</span> .ssh<br />brad@crazymed<span style="color:#a52a2a;font-weight:700">:</span>~<span style="color:#a52a2a;font-weight:700">/</span>.ssh$ <span style="color:#a52a2a;font-weight:700">ls</span> -al<br /><br /><br /></pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1114-1.png" alt="images/1114-1.png" /></p><p></p><p>2. Copy the “id_rsa” content and paste it on your Kali Machine in a file with the same name and change the permissions to 600.</p><p>    <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">echo</span> <span style="color:#ff00ff;font-weight:400">&quot;&lt;id_rsa content&quot;</span> &gt; id_rsa<br />$ <span style="color:#a52a2a;font-weight:700">chmod</span> 600 id_rsa</pre></div></p><p></p><p>3. Connect from your Kali Machine via SSH with the file “Id_rsa”.</p><p>    <div class="codebox"><pre>$ <span style="color:#a52a2a;font-weight:700">ssh</span> -i id_rsa brad@192.168.12.75</pre></div></p><p>   </p><p>    <span style="color:#ffa500;">Output:</span>   </p><p>    <img src="images/1114-2.png" alt="images/1114-2.png" /></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>

