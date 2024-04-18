@@ -1,0 +1,244 @@
+{
+  "main": {
+    "id": "8f39e1a268752e24",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ebc6f7e2c4b5169",
+        "type": "tabs",
+        "dimension": 69.16243654822335,
+        "children": [
+          {
+            "id": "79e386a642d4f550",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Router 1/Router1 flag.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "385373720ca10b18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Network 1/APK flag.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a9519733d4837e3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Squeme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d99430afd61d70c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Router 1/Router1 flag.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "06e85ee050d7535f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Router 1/Router1 flag.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "22802b38c6a98583",
+        "type": "tabs",
+        "dimension": 30.83756345177665,
+        "children": [
+          {
+            "id": "768a9144f1d13c0b",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8ad59479a15da210",
+    "type": "split",
+    "children": [
+      {
+        "id": "6862ee8d131bd66f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e20873feb257ab48",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "56e0a7872821d93f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "39bfe9e9c59ee84b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b9431d1502a57ce7",
+    "type": "split",
+    "children": [
+      {
+        "id": "96a24255d69f7490",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a1c33829f736094",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Router 1/Router1 flag.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fc2373a6e0daf7b8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Router 1/Router1 flag.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bd03b17178f8f723",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2b88baddecba43f3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Router 1/Router1 flag.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "github-sync:Sync with Remote": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7a1c33829f736094",
+  "lastOpenFiles": [
+    "Squeme.md",
+    "Network 1/WEBAPP flag.md",
+    "Router 1/Router1 flag.md",
+    "BGP hIjacking.md",
+    "Images/Pasted image 20240417143321.png",
+    "Images/udp_flag.png",
+    "Images/bgp1.png",
+    "Images/bgp.png",
+    "Images/ps-af.png",
+    "Network 1/Network 1 - Enumeration.md",
+    "Network 1/GitHack.md",
+    "Network 1/Web flag.md",
+    "Network 1/APK flag.md",
+    "Network 1/GIT flag.md",
+    "Images/BGP Scheme.png",
+    "Diagram.svg",
+    "Images/chisel.png",
+    "Diagram.svg.xml",
+    "Router 1",
+    "Images/shell.png",
+    "Images/uploader.png",
+    "LFI2RCE via phpinfo().md",
+    "Network 1/LFI2RCE via phpinfo().md",
+    "Network 1",
+    "Images"
+  ]
+}
